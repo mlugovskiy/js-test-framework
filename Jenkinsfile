@@ -1,9 +1,9 @@
 pipeline {
-    agent any
+  agent any
   stages {
     stage('install playwright') {
       steps {
-        sh '''
+        bat '''
           npm i -D @playwright/test
           npx playwright install
         '''
@@ -11,7 +11,7 @@ pipeline {
     }
     stage('test') {
       steps {
-        sh '''
+        bat '''
           npx playwright test --list
           npx playwright test
         '''
