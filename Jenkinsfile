@@ -13,7 +13,7 @@ pipeline {
       steps {
         powershell '''
           npx playwright test --list
-          npx playwright test ${testFiles} ${testTitles})
+          npx playwright test ${testFiles} ${testTitles}
         '''
       }
     }
