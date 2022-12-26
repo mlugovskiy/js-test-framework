@@ -14,6 +14,5 @@ test('Search test', async ({page}) => {
   .click();
 
   await expect(placePage.address).toHaveText('Могилев, ул. Ленинская, 22');
-  await expect(placePage.workTime).toHaveText('до 02:00');
   await expect(placePage.phone).toHaveText('+375  29 333-00-74');
 })
