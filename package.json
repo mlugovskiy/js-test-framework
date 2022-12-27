@@ -2,6 +2,7 @@
   "devDependencies": {
     "@playwright/test": "^1.28.1",
     "@typescript-eslint/eslint-plugin": "^5.47.0",
+    "allure-playwright": "^2.0.0-beta.22",
     "eslint": "^8.30.0",
     "eslint-config-standard-with-typescript": "^24.0.0",
     "eslint-plugin-import": "^2.26.0",
