@@ -4,11 +4,6 @@ pipeline {
     string defaultValue: '', description: 'Leave field empty for running all test files', name: 'filesToTest'
   }
   stages {
-    stage('Get repository from GitHub') {
-      steps {
-        git poll: false, url: 'https://github.com/mlugovskiy/js-test-framework'
-      }
-    }
     stage('Install packages') {
       steps {
         bat 'npm install'
