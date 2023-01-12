@@ -13,6 +13,6 @@ test('Search test', async ({page}) => {
   .filter({hasText: "Рестобар"})
   .click();
 
-  await expect(placePage.address).toHaveText('Могилев, ул. Ленинская, 22');
+  await expect(placePage.address).toHaveText('Могилев1, ул. Ленинская, 22');
   await expect(placePage.phone).toHaveText('+375  29 333-00-74');
 })
